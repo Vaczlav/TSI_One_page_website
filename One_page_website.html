@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridges Inspection</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#video">Videos</a>
+</nav>
+
+<section id="home">
+    <h1>Welcome to TSI Bridges Inspection</h1>
+    <p>TSI specializes in the inspection of bridges and culverts in the province of Ontario.</p>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div id="imageGallery" class="row">
+
+        <div class="column">
+            <img src="/images/bridge_inspection_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Bridge Inspection 1">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Bridge Inspection 2">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Bridge Inspection 3">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Bridge Inspection 4">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Bridge Inspection 5">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Bridge Inspection 6">
+        </div>     
+    </div>
+
+    <!-- Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="/images/bridge_inspection_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="/images/bridge_inspection_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="/images/bridge_inspection_3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="/images/bridge_inspection_4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="/images/bridge_inspection_5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="/images/bridge_inspection_6.jpg" style="width:100%">
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_1.jpg" onclick="currentSlide(1)" alt="Bridge Inspection 1">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_2.jpg" onclick="currentSlide(2)" alt="Bridge Inspection 2">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_3.jpg" onclick="currentSlide(3)" alt="Bridge Inspection 3">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_4.jpg" onclick="currentSlide(4)" alt="Bridge Inspection 4">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_5.jpg" onclick="currentSlide(5)" alt="Bridge Inspection 5">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_6.jpg" onclick="currentSlide(6)" alt="Bridge Inspection 6">
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<!-- Video (перенесене) -->
+<section id="video">
+    <h2>Inspection Videos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5FYI3g24nUE?si=ewHjql1xCsek9b2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+<!-- About the Company (новий текстовий блок) -->
+<section id="about">
+    <h2>About The Company</h2>
+    <p>TSI Inc. is a leading consulting engineering firm that develops and manages critical infrastructure projects. With decades of experience serving government agencies, private enterprises, and communities, we have earned a reputation for delivering innovative and sustainable solutions that enhance the quality of life and promote economic growth.</p>
+    
+    <h3>Comprehensive Civil Engineering Services</h3>
+    <ul style="text-align: left; max-width: 800px; margin: auto;">
+        <li><strong>Transportation Infrastructure:</strong> Planning, design, and construction management of roadways, bridges, and transit systems that optimize traffic flow, prioritize safety and enhance connectivity.</li>
+        <li><strong>Structural Engineering:</strong> Ensuring the integrity and safety of buildings, bridges, and other critical structures through meticulous design, analysis, and inspection services.</li>
+        <li><strong>Water Resources Management:</strong> Developing and implementing effective water management solutions, including hydraulic analysis, design of drainage systems, and flood mitigation strategies.</li>
+        <li><strong>Environmental Engineering:</strong> Providing sustainable solutions for environmental challenges, such as wastewater treatment, site remediation, and air quality management.</li>
+        <li><strong>Municipal Infrastructure:</strong> Assisting municipalities in the planning, designing, and managing essential infrastructure, including sewer and water systems, waste management facilities, and public works projects.</li>
+        <li><strong>Infrastructure Inspection and Assessment:</strong> Conduct comprehensive inspections and assessments of existing infrastructure to ensure safety and compliance and identify potential maintenance or rehabilitation needs.</li>
+    </ul>
+
+    <h3>Client-Focused Approach</h3>
+    <p>At TSI Inc., we prioritize collaboration and client satisfaction. We work closely with our clients to understand their unique challenges and objectives, developing innovative and cost-effective solutions that meet their specific requirements while adhering to all applicable regulations and industry best practices.</p>
+
+    <h3>Commitment to Excellence</h3>
+    <p>We are committed to delivering engineering excellence and contributing to a sustainable future for our communities. Our dedication to quality, innovation, and client partnership drives us to exceed expectations and deliver projects that have a lasting positive impact.</p>
+
+    <p><strong>Contact us today to discuss your infrastructure needs and discover how TSI Inc. can help you achieve your goals.</strong></p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><p>
+        <input type="email" placeholder="Your Email" required><p>
+        <textarea placeholder="Your Message" required></textarea><p>
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+
+<footer>
+    <p>TSI - Bridges Inspection</p>
+</footer>
+
+<!--Script patch-->
+<script src="/js/one_page_website.js"></script>
+
+</body>
+</html>
